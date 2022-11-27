@@ -1,0 +1,28 @@
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\bin\Debug\DataLayer.dll.config
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\bin\Debug\DataLayer.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\bin\Debug\DataLayer.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\bin\Debug\EntityFramework.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\bin\Debug\EntityFramework.xml
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\obj\Debug\DataLayer.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\obj\Debug\DataLayer.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\DataLayer.dll.config
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\DataLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\DataLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\EntityFramework.dll
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\EntityFramework.xml
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\obj\Debug\DataLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\obj\Debug\DataLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\EntityLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DataLayer\bin\Debug\EntityLayer.pdb
+E:\Student Jobs\DotNet\Password Manager\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+E:\Student Jobs\DotNet\Password Manager\DataLayer\obj\Debug\DataLayer.dll
+E:\Student Jobs\DotNet\Password Manager\DataLayer\obj\Debug\DataLayer.pdb
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\DataLayer.dll.config
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\DataLayer.dll
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\DataLayer.pdb
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\EntityFramework.dll
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\EntityLayer.dll
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\EntityLayer.pdb
+E:\Student Jobs\DotNet\Password Manager\DataLayer\bin\Debug\EntityFramework.xml

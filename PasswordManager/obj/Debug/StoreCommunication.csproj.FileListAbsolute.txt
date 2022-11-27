@@ -1,0 +1,22 @@
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\StoreCommunication.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\StoreCommunication.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\obj\Debug\StoreCommunication.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\obj\Debug\StoreCommunication.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\obj\Debug\StoreCommunication.csprojResolveAssemblyReference.cache
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\DataLayer.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\EntityLayer.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\EntityFramework.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\DataLayer.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\EntityLayer.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\StoreCommunication\bin\EntityFramework.xml
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\StoreCommunication.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\StoreCommunication.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\DataLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\EntityLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\EntityFramework.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\DataLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\EntityLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\bin\EntityFramework.xml
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\obj\Debug\StoreCommunication.csprojResolveAssemblyReference.cache
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\obj\Debug\StoreCommunication.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointment\obj\Debug\StoreCommunication.pdb

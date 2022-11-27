@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DoctorAppointmentModelStoreContainer" CdmEntityContainer="DoctorAppointmentEntities">
+    <EntitySetMapping Name="HealthRecords">
+      <EntityTypeMapping TypeName="DoctorAppointmentModel.HealthRecord">
+        <MappingFragment StoreEntitySet="HealthRecords">
+          <ScalarProperty Name="EmergencyContactInfo" ColumnName="EmergencyContactInfo" />
+          <ScalarProperty Name="ChronicDisease" ColumnName="ChronicDisease" />
+          <ScalarProperty Name="Surgeries" ColumnName="Surgeries" />
+          <ScalarProperty Name="MajorIllness" ColumnName="MajorIllness" />
+          <ScalarProperty Name="Allergies" ColumnName="Allergies" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="HealthRecordID" ColumnName="HealthRecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DoctorAppointmentModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

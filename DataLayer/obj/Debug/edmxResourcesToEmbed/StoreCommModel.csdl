@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StoreCommModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="StoreCommEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Doctors" EntityType="StoreCommModel.Doctor" />
+    <EntitySet Name="Medicines" EntityType="StoreCommModel.Medicine" />
+    <EntitySet Name="MedicineTypes" EntityType="StoreCommModel.MedicineType" />
+    <EntitySet Name="Pharmacies" EntityType="StoreCommModel.Pharmacy" />
+    <AssociationSet Name="FK_Doctor_Pharmacy" Association="StoreCommModel.FK_Doctor_Pharmacy">
+      <End Role="Pharmacy" EntitySet="Pharmacies" />
+      <End Role="Doctor" EntitySet="Doctors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Medicine_MedicineType" Association="StoreCommModel.FK_Medicine_MedicineType">
+      <End Role="MedicineType" EntitySet="MedicineTypes" />
+      <End Role="Medicine" EntitySet="Medicines" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="DoctorID" />
+    </Key>
+    <Property Name="DoctorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PharmacyID" Type="Int32" />
+    <NavigationProperty Name="Pharmacy" Relationship="StoreCommModel.FK_Doctor_Pharmacy" FromRole="Doctor" ToRole="Pharmacy" />
+  </EntityType>
+  <EntityType Name="Medicine">
+    <Key>
+      <PropertyRef Name="MedicineID" />
+    </Key>
+    <Property Name="MedicineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" />
+    <NavigationProperty Name="MedicineType" Relationship="StoreCommModel.FK_Medicine_MedicineType" FromRole="Medicine" ToRole="MedicineType" />
+  </EntityType>
+  <EntityType Name="MedicineType">
+    <Key>
+      <PropertyRef Name="MedicineTypeID" />
+    </Key>
+    <Property Name="MedicineTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Medicine" Relationship="StoreCommModel.FK_Medicine_MedicineType" FromRole="MedicineType" ToRole="Medicine" />
+  </EntityType>
+  <EntityType Name="Pharmacy">
+    <Key>
+      <PropertyRef Name="PharmacyID" />
+    </Key>
+    <Property Name="PharmacyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Doctors" Relationship="StoreCommModel.FK_Doctor_Pharmacy" FromRole="Pharmacy" ToRole="Doctor" />
+  </EntityType>
+  <Association Name="FK_Doctor_Pharmacy">
+    <End Role="Pharmacy" Type="StoreCommModel.Pharmacy" Multiplicity="0..1" />
+    <End Role="Doctor" Type="StoreCommModel.Doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pharmacy">
+        <PropertyRef Name="PharmacyID" />
+      </Principal>
+      <Dependent Role="Doctor">
+        <PropertyRef Name="PharmacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Medicine_MedicineType">
+    <End Role="MedicineType" Type="StoreCommModel.MedicineType" Multiplicity="1" />
+    <End Role="Medicine" Type="StoreCommModel.Medicine" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MedicineType">
+        <PropertyRef Name="MedicineTypeID" />
+      </Principal>
+      <Dependent Role="Medicine">
+        <PropertyRef Name="MedicineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

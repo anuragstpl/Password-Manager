@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StoreCommModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="StoreCommModelStoreContainer">
+    <EntitySet Name="Doctor" EntityType="StoreCommModel.Store.Doctor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Medicine" EntityType="StoreCommModel.Store.Medicine" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MedicineType" EntityType="StoreCommModel.Store.MedicineType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pharmacy" EntityType="StoreCommModel.Store.Pharmacy" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Doctor_Pharmacy" Association="StoreCommModel.Store.FK_Doctor_Pharmacy">
+      <End Role="Pharmacy" EntitySet="Pharmacy" />
+      <End Role="Doctor" EntitySet="Doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Medicine_MedicineType" Association="StoreCommModel.Store.FK_Medicine_MedicineType">
+      <End Role="MedicineType" EntitySet="MedicineType" />
+      <End Role="Medicine" EntitySet="Medicine" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="DoctorID" />
+    </Key>
+    <Property Name="DoctorID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar(max)" />
+    <Property Name="LastName" Type="varchar(max)" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="PharmacyID" Type="int" />
+  </EntityType>
+  <EntityType Name="Medicine">
+    <Key>
+      <PropertyRef Name="MedicineID" />
+    </Key>
+    <Property Name="MedicineID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Quantity" Type="nvarchar(max)" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="MedicineType">
+    <Key>
+      <PropertyRef Name="MedicineTypeID" />
+    </Key>
+    <Property Name="MedicineTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Pharmacy">
+    <Key>
+      <PropertyRef Name="PharmacyID" />
+    </Key>
+    <Property Name="PharmacyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar(max)" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Doctor_Pharmacy">
+    <End Role="Pharmacy" Type="StoreCommModel.Store.Pharmacy" Multiplicity="0..1" />
+    <End Role="Doctor" Type="StoreCommModel.Store.Doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pharmacy">
+        <PropertyRef Name="PharmacyID" />
+      </Principal>
+      <Dependent Role="Doctor">
+        <PropertyRef Name="PharmacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Medicine_MedicineType">
+    <End Role="MedicineType" Type="StoreCommModel.Store.MedicineType" Multiplicity="1" />
+    <End Role="Medicine" Type="StoreCommModel.Store.Medicine" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MedicineType">
+        <PropertyRef Name="MedicineTypeID" />
+      </Principal>
+      <Dependent Role="Medicine">
+        <PropertyRef Name="MedicineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

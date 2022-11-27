@@ -1,0 +1,14 @@
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\EntityLayer\bin\Debug\EntityLayer.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\EntityLayer\bin\Debug\EntityLayer.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\EntityLayer\obj\Debug\EntityLayer.dll
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\EntityLayer\obj\Debug\EntityLayer.pdb
+E:\Live Projects\DocComm\Store Comm Services\StoreCommunication\EntityLayer\obj\Debug\EntityLayer.csprojResolveAssemblyReference.cache
+E:\Student Jobs\DotNet\StoreCommunication\EntityLayer\bin\Debug\EntityLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\EntityLayer\bin\Debug\EntityLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\EntityLayer\obj\Debug\EntityLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\EntityLayer\obj\Debug\EntityLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\EntityLayer\obj\Debug\EntityLayer.csprojResolveAssemblyReference.cache
+E:\Student Jobs\DotNet\Password Manager\EntityLayer\bin\Debug\EntityLayer.dll
+E:\Student Jobs\DotNet\Password Manager\EntityLayer\bin\Debug\EntityLayer.pdb
+E:\Student Jobs\DotNet\Password Manager\EntityLayer\obj\Debug\EntityLayer.dll
+E:\Student Jobs\DotNet\Password Manager\EntityLayer\obj\Debug\EntityLayer.pdb

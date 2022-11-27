@@ -1,0 +1,11 @@
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\DoctorAppointmentWeb.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\DoctorAppointmentWeb.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\obj\Debug\DoctorAppointmentWeb.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\obj\Debug\DoctorAppointmentWeb.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\DataLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\EntityLayer.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\EntityFramework.dll
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\DataLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\EntityLayer.pdb
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\bin\EntityFramework.xml
+E:\Student Jobs\DotNet\StoreCommunication\DoctorAppointmentWeb\obj\Debug\DoctorAppointmentWeb.csprojResolveAssemblyReference.cache

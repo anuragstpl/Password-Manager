@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DoctorAppointmentModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DoctorAppointmentModelStoreContainer">
+    <EntitySet Name="HealthRecords" EntityType="DoctorAppointmentModel.Store.HealthRecords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="DoctorAppointmentModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_HealthRecords_Users" Association="DoctorAppointmentModel.Store.FK_HealthRecords_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="HealthRecords" EntitySet="HealthRecords" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HealthRecords">
+    <Key>
+      <PropertyRef Name="HealthRecordID" />
+    </Key>
+    <Property Name="HealthRecordID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PatientID" Type="int" />
+    <Property Name="BloodGroup" Type="varchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Allergies" Type="bit" />
+    <Property Name="MajorIllness" Type="nvarchar(max)" />
+    <Property Name="Surgeries" Type="nvarchar(max)" />
+    <Property Name="ChronicDisease" Type="nvarchar(max)" />
+    <Property Name="EmergencyContactInfo" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="400" />
+    <Property Name="Username" Type="nvarchar" MaxLength="300" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Speciality" Type="nvarchar(max)" />
+    <Property Name="UserType" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_HealthRecords_Users">
+    <End Role="Users" Type="DoctorAppointmentModel.Store.Users" Multiplicity="0..1" />
+    <End Role="HealthRecords" Type="DoctorAppointmentModel.Store.HealthRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="HealthRecords">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
